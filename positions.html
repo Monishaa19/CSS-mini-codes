@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions in css</title>
+
+    <style>
+        body{
+            height:200vh;
+            margin: 2rem;
+        }
+        
+      
+        p{
+            padding:1rem;
+            background-color: aliceblue;
+        }
+
+        .outer{
+            border: 2px solid black;
+            margin:2rem;
+            
+        }
+
+        .inner{
+            margin:2rem;
+            border:2px dashed black;
+        
+        }
+
+        .absolute{
+            background-color: aqua;
+            height:10vw;
+            width:10vw;
+            /**position:absolute;
+            top:0;
+            z-index:-1;*/
+           
+        }
+
+        .relative{
+            background-color:green;
+            height:10vw;
+            width:10vw;
+           /** position:relative;
+            top:200px;*/
+            
+        }
+
+        .fixed{
+            background-color:red;
+            height:10vw;
+            width:10vw;
+            /**position:fixed;
+            top:100px;*/
+        }
+
+        .sticky{
+            background-color:purple;
+            height:10vw;
+            width:10vw;
+            position:sticky;
+            top:0;
+            
+        }
+
+        div{
+            display: inline-block;
+            margin:1rem;
+        }
+    </style>
+</head>
+<body>
+    
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum fuga totam eius, iste nobis voluptas blanditiis nesciunt cumque, placeat, obcaecati accusantium? Voluptatem blanditiis odit corporis ipsa! Nulla facilis fugit enim!</p>
+   
+
+    <div class="outer">
+        <div class="inner">
+           
+
+            <div class="absolute">absolute</div>
+            <div class="relative">relative</div>
+            <div class="fixed">fixed</div>
+            <div class="sticky">sticky</div>
+        </div>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore autem magnam incidunt quasi impedit officiis eius tempora quidem libero quos ab, ad dignissimos eligendi adipisci veritatis? Adipisci quibusdam optio neque!</p>
+        <p>Magni rerum cumque atque, nulla cupiditate, neque alias totam doloribus maxime tenetur quaerat repellat eveniet minus voluptatem blanditiis quibusdam inventore minima velit quo. Aut libero impedit inventore sed eos! Ipsum.</p>
+        <p>Unde ullam aliquid, repellendus soluta sapiente veritatis dolores placeat molestiae. Ratione vel accusamus perspiciatis nostrum non asperiores excepturi, facere laudantium beatae, modi voluptates architecto quam maiores dolorem pariatur voluptate et?</p>
+        <p>Ratione, maiores ea quidem eos natus repellendus sunt quasi. Laboriosam sed ipsum, illo repellendus exercitationem similique? Quisquam, harum, autem facere voluptatem mollitia et laborum ipsa explicabo laboriosam, necessitatibus quibusdam reprehenderit.</p>
+    </div>
+</body>
+</html>
